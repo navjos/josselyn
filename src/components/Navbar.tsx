@@ -38,15 +38,13 @@ const Navbar = () => {
         
         <div className="flex items-center space-x-4">
           <Link
-            to="/portfolio"
+            to={location.pathname === '/portfolio' ? '/' : '/portfolio'}
             className={cn(
               'py-2 px-4 rounded-full transition-all duration-300',
-              location.pathname === '/portfolio'
-                ? 'bg-purple text-white'
-                : 'bg-soft-purple text-purple hover:bg-purple hover:text-white'
+              'bg-soft-purple text-purple hover:bg-purple hover:text-white'
             )}
           >
-            Portfolio
+            {location.pathname === '/portfolio' ? 'Home' : 'Portfolio'}
           </Link>
         </div>
       </div>
