@@ -23,15 +23,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       style={{ animationDelay: `${delay}s` }}
     >
       <div className="p-8">
-        <h3 className="text-xl font-semibold mb-3 text-purple">{title}</h3>
-        <p className="text-muted-foreground mb-5">{description}</p>
+        <h3 className="text-xl font-semibold mb-3 text-purple-600">{title}</h3>
+        <p className="text-gray-600 mb-5">{description}</p>
         
         {link && (
           <a 
             href={link} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center text-purple hover:text-purple-dark gap-1.5 transition-colors"
+            className="inline-flex items-center text-purple-600 hover:text-purple-800 gap-1.5 transition-colors"
           >
             Visit Project <ExternalLink size={14} />
           </a>
