@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import ProjectCard from '@/components/ProjectCard';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Home } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
@@ -72,13 +72,15 @@ const Portfolio = () => {
       
       <main className="pt-32 pb-20 px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
-          <Link 
-            to="/" 
-            className="inline-flex items-center gap-2 text-purple hover:text-purple-dark mb-8 transition-colors"
-          >
-            <ArrowLeft size={18} />
-            Back to Home
-          </Link>
+          <div className="flex mb-10">
+            <Link 
+              to="/" 
+              className="inline-flex items-center gap-2 text-white bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-md transition-colors shadow-sm"
+            >
+              <Home size={18} />
+              Back to Home
+            </Link>
+          </div>
           
           <div className="section-transition">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">Portfolio</h1>
