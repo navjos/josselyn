@@ -33,9 +33,6 @@ const Hero = () => {
           ref={textRef}
           className="lg:w-1/2 text-center lg:text-left section-transition"
         >
-          <div className="inline-block px-3 py-1 rounded-full bg-soft-purple text-purple mb-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Product Management
-          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             Hi, I'm <span className="text-purple">Josselyn</span>
           </h1>
