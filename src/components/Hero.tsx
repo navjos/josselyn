@@ -37,7 +37,7 @@ const Hero = () => {
             Hi, I'm <span className="text-purple">Josselyn</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto lg:mx-0 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-            High-agency builder with 3 years of experience driving product experiences and user growth with a B.A. in Economics.
+            High-agency builder with 3 years of experience driving product experiences and user growth.
           </p>
         </div>
         
