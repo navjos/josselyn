@@ -42,7 +42,7 @@ const About = () => {
               <h3 className="text-xl font-semibold mb-4 text-purple">Experience</h3>
               <div className="flex flex-col space-y-4">
                 <p className="text-muted-foreground">
-                  As a Product Growth Analyst at RentCheck, I use data insights to optimize conversions, enhance onboarding, and refine user journeys to boost activation and reduce churn. I'm also the founder of WealthOnThe7, a bilingual personal finance Substack newsletter that empowers readers to make better financial decisions. Previously, I was an equities trader at Goldman Sachs.
+                  Currently a Product Growth Analyst at RentCheck, an early-stage Techstars-backed startup helping automate rental property inspections. I use data insights to optimize trial conversions, enhance onboarding, and refine user journeys to boost activation. Previously, I was an equities trader at Goldman Sachs.
                 </p>
                 <div className="mt-4 rounded-lg overflow-hidden shadow-md">
                   <img 
@@ -56,9 +56,20 @@ const About = () => {
             
             <div className="bg-white p-8 rounded-xl shadow-sm card-hover">
               <h3 className="text-xl font-semibold mb-4 text-purple">Leadership</h3>
-              <p className="text-muted-foreground">
-                I'm the co-founder of the Business Organization for Latino Development at the University of Chicago and serve as the youngest board member of La Unidad Latina Foundation, where I help create educational opportunities for underrepresented communities through a national scholarship.
-              </p>
+              <div className="flex flex-col space-y-4">
+                <ul className="text-muted-foreground list-disc pl-5 space-y-2">
+                  <li>Founder of WealthOnThe7, a bilingual Substack newsletter democratizing personal finance education for Main Street Professionals.</li>
+                  <li>Co-founder of the University of Chicago's BOLD, the first organization aimed at preparing Latino undergraduate students for careers in business.</li>
+                  <li>Active in the NYC civic engagement scene and serve as the youngest board member of La Unidad Latina Foundation, which helps create educational opportunities for underrepresented communities through a national scholarship.</li>
+                </ul>
+                <div className="mt-4 rounded-lg overflow-hidden shadow-md">
+                  <img 
+                    src="/lovable-uploads/508237c3-a768-496c-9512-d3c3cc6a76e0.png" 
+                    alt="BOLD organization" 
+                    className="w-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-sm card-hover md:col-span-2">
