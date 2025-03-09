@@ -3,22 +3,6 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-interface WorkCardProps {
-  title: string;
-  description: string;
-  index: number;
-}
-
-const WorkCard = ({ title, description, index }: WorkCardProps) => (
-  <div 
-    className="bg-white p-8 rounded-xl shadow-sm card-hover"
-    style={{ animationDelay: `${0.2 * index}s` }}
-  >
-    <h3 className="text-xl font-semibold mb-3 text-purple">{title}</h3>
-    <p className="text-muted-foreground mb-4">{description}</p>
-  </div>
-);
-
 const FeaturedWorks = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -41,21 +25,6 @@ const FeaturedWorks = () => {
     };
   }, []);
 
-  const works = [
-    {
-      title: "Product Growth Analyst",
-      description: "At RentCheck, I analyze user behavior and implement strategies to drive growth and engagement."
-    },
-    {
-      title: "WealthOnThe7",
-      description: "Founded a bilingual Substack newsletter focused on personal finance education and wealth building."
-    },
-    {
-      title: "Web Applications",
-      description: "Created practical financial tools including a retirement calculator and debt repayment planner."
-    }
-  ];
-
   return (
     <section 
       ref={sectionRef}
@@ -70,15 +39,10 @@ const FeaturedWorks = () => {
             Recent Projects & Roles
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mb-12">
-            {works.map((work, index) => (
-              <WorkCard 
-                key={index}
-                title={work.title}
-                description={work.description}
-                index={index}
-              />
-            ))}
+          <div className="max-w-2xl text-center mb-12">
+            <p className="text-muted-foreground">
+              Explore a selection of my recent work and projects that demonstrates my creativity and problem-solving
+            </p>
           </div>
           
           <Link 

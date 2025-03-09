@@ -124,15 +124,15 @@ const About = () => {
                   <Database className="w-8 h-8 text-purple" />
                 </div>
                 <p className="font-medium">SQL</p>
-                <p className="text-sm text-muted-foreground">3+ years</p>
+                <p className="text-sm text-muted-foreground">1+ years</p>
               </div>
               
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 flex items-center justify-center bg-soft-purple rounded-full mb-3">
                   <Send className="w-8 h-8 text-purple" />
                 </div>
-                <p className="font-medium">API</p>
-                <p className="text-sm text-muted-foreground">2+ years</p>
+                <p className="font-medium">REST APIs</p>
+                <p className="text-sm text-muted-foreground">1+ years</p>
               </div>
             </div>
           </div>
