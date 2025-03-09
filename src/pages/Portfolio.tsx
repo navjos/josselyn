@@ -40,7 +40,7 @@ const Portfolio = () => {
       title: "WealthOnThe7",
       description: "Bilingual personal finance newsletter breaking down complex financial concepts for everyday professionals.",
       icon: <BookOpen className="w-5 h-5" />,
-      image: "/lovable-uploads/55b10f52-79ba-4670-8e80-6ea5afc062b8.png",
+      image: "/lovable-uploads/3086d3c4-f336-4320-875f-782aa55748ae.png",
       link: "https://wealthonthe7.substack.com/",
       delay: 0.2
     },
@@ -56,6 +56,7 @@ const Portfolio = () => {
       title: "La Unidad Latina Foundation",
       description: "Board member providing scholarships and educational opportunities for underrepresented communities.",
       icon: <Briefcase className="w-5 h-5" />,
+      image: "/lovable-uploads/a053c33f-3f54-4ec6-89ba-4ae4c0da1580.png",
       link: "https://www.lulfoundation.org/",
       delay: 0.4
     }
