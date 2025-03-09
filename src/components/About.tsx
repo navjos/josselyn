@@ -62,7 +62,7 @@ const About = () => {
                 <ul className="text-muted-foreground list-disc pl-5 space-y-2">
                   <li>Founder of WealthOnThe7, a bilingual Substack newsletter democratizing personal finance education for Main Street Professionals.</li>
                   <li>Co-founder of the University of Chicago's BOLD, the first organization aimed at preparing Latino undergraduate students for careers in business.</li>
-                  <li>Active in the NYC civic engagement scene and serve as the youngest board member of La Unidad Latina Foundation, which helps create educational opportunities for underrepresented communities through a national scholarship.</li>
+                  <li>Youngest board member of La Unidad Latina Foundation.</li>
                 </ul>
                 <div className="mt-4 rounded-lg overflow-hidden shadow-md">
                   <img 
