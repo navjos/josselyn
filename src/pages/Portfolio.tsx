@@ -1,7 +1,8 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import ProjectCard from '@/components/ProjectCard';
-import { Link } from 'react-router-dom';
+import { ExternalLink, Briefcase, BookOpen, Building, GraduationCap } from 'lucide-react';
 
 const Portfolio = () => {
   // Add scroll reveal functionality
@@ -28,23 +29,34 @@ const Portfolio = () => {
 
   const experiences = [
     {
-      title: "Product Growth Analyst at RentCheck",
-      description: "Leveraging data insights to drive product decisions and growth strategies for a proptech startup. I analyze user behavior patterns and implement A/B tests to optimize conversion funnels and improve user retention.",
+      title: "Product Growth at RentCheck",
+      description: "Optimizing conversion funnels and improving user retention through data-driven product decisions.",
+      icon: <Building className="w-5 h-5" />,
+      image: "/lovable-uploads/eff3a298-3ca6-42a5-b87d-4ce21f5fa189.png",
+      link: "https://www.getrentcheck.com/",
       delay: 0.1
     },
     {
-      title: "Founder of WealthOnThe7",
-      description: "Created and manage a bilingual personal finance newsletter on Substack that breaks down complex financial concepts into accessible advice. The newsletter has grown organically through word-of-mouth and consistently maintains high engagement rates.",
+      title: "WealthOnThe7",
+      description: "Bilingual personal finance newsletter breaking down complex financial concepts for everyday professionals.",
+      icon: <BookOpen className="w-5 h-5" />,
+      image: "/lovable-uploads/55b10f52-79ba-4670-8e80-6ea5afc062b8.png",
+      link: "https://wealthonthe7.substack.com/",
       delay: 0.2
     },
     {
-      title: "Founder of Business Organization for Latino Development",
-      description: "Established a student organization at UChicago dedicated to supporting Latino students interested in business careers. Organized networking events, workshops, and mentorship programs to connect students with industry professionals.",
+      title: "Business Organization for Latino Development",
+      description: "Supporting Latino students at UChicago with networking events and mentorship programs.",
+      icon: <GraduationCap className="w-5 h-5" />,
+      image: "/lovable-uploads/508237c3-a768-496c-9512-d3c3cc6a76e0.png",
+      link: "https://www.uchicagobold.org/",
       delay: 0.3
     },
     {
-      title: "Board Member at La Unidad Latina Foundation",
-      description: "Serve as the youngest board member of this foundation, helping to provide scholarships and educational opportunities for underrepresented communities. Contribute to strategic planning and outreach initiatives to expand the foundation's impact.",
+      title: "La Unidad Latina Foundation",
+      description: "Board member providing scholarships and educational opportunities for underrepresented communities.",
+      icon: <Briefcase className="w-5 h-5" />,
+      link: "https://www.lulfoundation.org/",
       delay: 0.4
     }
   ];
@@ -52,13 +64,13 @@ const Portfolio = () => {
   const applications = [
     {
       title: "Retirement Planning Tool",
-      description: "An interactive calculator that helps users plan for financial independence and retirement. The tool visualizes savings growth over time and provides customized recommendations based on user inputs.",
+      description: "Interactive calculator for financial independence planning with personalized recommendations.",
       link: "https://navjos.github.io/fire-calculator/",
       delay: 0.5
     },
     {
       title: "Debt Repayment Planner",
-      description: "A comprehensive web application that assists users in creating personalized debt repayment strategies. Features include payment scheduling, progress tracking, and optimization algorithms to minimize interest payments.",
+      description: "Strategic debt repayment application minimizing interest through optimized payment scheduling.",
       link: "https://payplanwizard.lovable.app/auth",
       delay: 0.6
     }
@@ -68,20 +80,19 @@ const Portfolio = () => {
     <div className="min-h-screen bg-white overflow-hidden">
       <Navbar />
       
-      <main className="pt-32 pb-20 px-6 md:px-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="section-transition">
+      <main className="pt-24 pb-20 px-6 md:px-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="section-transition mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">Portfolio</h1>
-            <p className="text-xl text-muted-foreground mb-16 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              A showcase of my professional experiences, leadership roles, and technical projects.
+            <p className="text-lg text-muted-foreground max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              Professional experiences, leadership roles, and technical projects
             </p>
           </div>
           
-          <section className="mb-20 section-transition">
+          <section className="mb-16 section-transition">
             <div className="inline-block px-3 py-1 rounded-full bg-soft-purple text-purple mb-6">
-              Professional Experience
+              Experience & Leadership
             </div>
-            <h2 className="text-3xl font-bold mb-8">Roles & Organizations</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {experiences.map((exp, index) => (
@@ -89,6 +100,9 @@ const Portfolio = () => {
                   key={index}
                   title={exp.title}
                   description={exp.description}
+                  link={exp.link}
+                  icon={exp.icon}
+                  image={exp.image}
                   delay={exp.delay}
                 />
               ))}
@@ -99,7 +113,6 @@ const Portfolio = () => {
             <div className="inline-block px-3 py-1 rounded-full bg-soft-purple text-purple mb-6">
               Web Applications
             </div>
-            <h2 className="text-3xl font-bold mb-8">Projects</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {applications.map((app, index) => (
