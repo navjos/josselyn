@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Building, GraduationCap, Globe, MapPin, Music, Utensils, Palette } from 'lucide-react';
+import { Building, GraduationCap, Globe, MapPin, Music, Utensils, Palette, CircuitBoard, Database, Send } from 'lucide-react';
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -38,14 +38,14 @@ const About = () => {
             Product, Impact, and Innovation
           </h2>
           
-          <div className="bg-white p-8 rounded-xl shadow-sm card-hover max-w-4xl w-full">
+          <div className="bg-white p-8 rounded-xl shadow-sm card-hover max-w-4xl w-full mb-8">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/2">
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I'm a product professional and ecosystem builder dedicated to crafting solutions that blend innovation and impact for real-world problems. Currently, I am leading product growth at RentCheck, a Tech-stars backed early stage startup automating rental property inspections.
+                  I'm a product professional and ecosystem builder dedicated to crafting solutions that blend innovation and impact for real-world problems. Currently, I am leading product growth at RentCheck, a Techstars backed early stage startup automating rental property inspections.
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Previously, I was an emerging markets sales trader at Goldman Sachs. I graduated from the University of Chicago magna cum laude with a degree in Economics and Data Science.
+                  Previously, I was an equities sales trader at Goldman Sachs, where I covered institutional clients trading Latin American stocks and helped scale the Andean equity swap business. I graduated from the University of Chicago magna cum laude with a degree in Economics and Data Science.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
@@ -53,7 +53,7 @@ const About = () => {
                     <div className="p-2 bg-soft-purple rounded-lg">
                       <Building className="w-5 h-5 text-purple" />
                     </div>
-                    <span className="text-sm">RentCheck</span>
+                    <span className="text-sm">RentCheck / GS</span>
                   </div>
                   
                   <div className="flex items-center gap-3">
@@ -103,31 +103,36 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                
-                <div className="flex justify-center mt-5">
-                  <div className="flex gap-5">
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 flex items-center justify-center bg-soft-purple rounded-full mb-2">
-                        <span className="font-bold text-purple">Py</span>
-                      </div>
-                      <p className="text-xs text-center">Python</p>
-                    </div>
-                    
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 flex items-center justify-center bg-soft-purple rounded-full mb-2">
-                        <span className="font-bold text-purple">SQL</span>
-                      </div>
-                      <p className="text-xs text-center">Database</p>
-                    </div>
-                    
-                    <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 flex items-center justify-center bg-soft-purple rounded-full mb-2">
-                        <span className="font-bold text-purple">API</span>
-                      </div>
-                      <p className="text-xs text-center">Postman</p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Technical background card */}
+          <div className="bg-white p-8 rounded-xl shadow-sm card-hover max-w-4xl w-full">
+            <h3 className="text-xl font-semibold mb-6 text-center">Technical Background</h3>
+            <div className="flex justify-center gap-8 flex-wrap">
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex items-center justify-center bg-soft-purple rounded-full mb-3">
+                  <CircuitBoard className="w-8 h-8 text-purple" />
                 </div>
+                <p className="font-medium">Python</p>
+                <p className="text-sm text-muted-foreground">3+ years</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex items-center justify-center bg-soft-purple rounded-full mb-3">
+                  <Database className="w-8 h-8 text-purple" />
+                </div>
+                <p className="font-medium">SQL</p>
+                <p className="text-sm text-muted-foreground">3+ years</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex items-center justify-center bg-soft-purple rounded-full mb-3">
+                  <Send className="w-8 h-8 text-purple" />
+                </div>
+                <p className="font-medium">API</p>
+                <p className="text-sm text-muted-foreground">2+ years</p>
               </div>
             </div>
           </div>
