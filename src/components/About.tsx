@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
+import { Database, Send, CircuitBoard } from 'lucide-react';
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -76,11 +77,31 @@ const About = () => {
             
             <div className="bg-white p-8 rounded-xl shadow-sm card-hover md:col-span-2">
               <h3 className="text-xl font-semibold mb-4 text-purple">Technical Skills</h3>
-              <p className="text-muted-foreground">
-                I continuously explore emerging AI tools and have built mini-apps such as a retirement planning tool and a debt repayment planner. With a minor in data science from the University of Chicago, I'm proficient in Python for statistical analysis. I also completed an IBM course on front-end development with React and back-end development with Node.js and Express.
-                <br /><br />
-                My blend of technical expertise and product acumen enables me to bridge the gap between engineering teams and user needs, translating insights into actionable technical requirements.
-              </p>
+              <div className="flex flex-wrap justify-center gap-8 mt-4">
+                <div className="flex flex-col items-center">
+                  <div className="w-16 h-16 flex items-center justify-center bg-soft-purple rounded-full mb-2">
+                    <CircuitBoard className="w-8 h-8 text-purple" />
+                  </div>
+                  <p className="font-medium text-lg">Python</p>
+                  <p className="text-muted-foreground">3 years</p>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                  <div className="w-16 h-16 flex items-center justify-center bg-soft-purple rounded-full mb-2">
+                    <Database className="w-8 h-8 text-purple" />
+                  </div>
+                  <p className="font-medium text-lg">SQL</p>
+                  <p className="text-muted-foreground">1 year</p>
+                </div>
+                
+                <div className="flex flex-col items-center">
+                  <div className="w-16 h-16 flex items-center justify-center bg-soft-purple rounded-full mb-2">
+                    <Send className="w-8 h-8 text-purple" />
+                  </div>
+                  <p className="font-medium text-lg">Postman</p>
+                  <p className="text-muted-foreground">1 year</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
