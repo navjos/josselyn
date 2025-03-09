@@ -40,9 +40,18 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl">
             <div className="bg-white p-8 rounded-xl shadow-sm card-hover">
               <h3 className="text-xl font-semibold mb-4 text-purple">Experience</h3>
-              <p className="text-muted-foreground">
-                As a Product Growth Analyst at RentCheck, I use data insights to optimize conversions, enhance onboarding, and refine user journeys to boost activation and reduce churn. I'm also the founder of WealthOnThe7, a bilingual personal finance Substack newsletter that empowers readers to make better financial decisions. Previously, I was an equities trader at Goldman Sachs.
-              </p>
+              <div className="flex flex-col space-y-4">
+                <p className="text-muted-foreground">
+                  As a Product Growth Analyst at RentCheck, I use data insights to optimize conversions, enhance onboarding, and refine user journeys to boost activation and reduce churn. I'm also the founder of WealthOnThe7, a bilingual personal finance Substack newsletter that empowers readers to make better financial decisions. Previously, I was an equities trader at Goldman Sachs.
+                </p>
+                <div className="mt-4 rounded-lg overflow-hidden shadow-md">
+                  <img 
+                    src="/lovable-uploads/aea47397-7398-463e-9ed2-11a341a6a7e3.png" 
+                    alt="RentCheck product interface" 
+                    className="w-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-sm card-hover">
