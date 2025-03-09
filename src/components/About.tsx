@@ -43,7 +43,7 @@ const About = () => {
               <div className="flex flex-col space-y-4">
                 <ul className="text-muted-foreground list-disc pl-5 space-y-2">
                   <li>Currently a Product Growth Analyst at RentCheck, an early-stage Techstars-backed startup helping automate rental property inspections.</li>
-                  <li>Use data insights to optimize trial conversions, enhance onboarding, and refine user journeys to boost activation.</li>
+                  <li>I use data insights to optimize trial conversions, enhance onboarding, and refine user journeys to boost activation.</li>
                   <li>Previously, I was an equities trader at Goldman Sachs.</li>
                 </ul>
                 <div className="mt-4 rounded-lg overflow-hidden shadow-md">
@@ -62,6 +62,7 @@ const About = () => {
                 <ul className="text-muted-foreground list-disc pl-5 space-y-2">
                   <li>Founder of WealthOnThe7, a bilingual Substack newsletter democratizing personal finance education for Main Street Professionals.</li>
                   <li>Co-founder of the University of Chicago's BOLD, the first organization aimed at preparing Latino undergraduate students for careers in business.</li>
+                  <li>Active in the NYC civic engagement scene and serve as the youngest board member of La Unidad Latina Foundation, which helps create educational opportunities for underrepresented communities through a national scholarship.</li>
                 </ul>
                 <div className="mt-4 rounded-lg overflow-hidden shadow-md">
                   <img 
