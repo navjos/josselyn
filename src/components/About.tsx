@@ -85,24 +85,6 @@ const About = () => {
                   alt="RentCheck interface" 
                   className="w-full rounded-lg mb-6 shadow-md"
                 />
-                
-                <div className="bg-soft-purple p-5 rounded-lg">
-                  <h3 className="text-lg font-semibold text-purple mb-3">Fun Facts</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    <div className="flex items-center gap-2">
-                      <Utensils className="w-4 h-4 text-purple" />
-                      <span className="text-sm">Ceviche lover</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Music className="w-4 h-4 text-purple" />
-                      <span className="text-sm">Bachata dancer</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Palette className="w-4 h-4 text-purple" />
-                      <span className="text-sm">Purple enthusiast</span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
