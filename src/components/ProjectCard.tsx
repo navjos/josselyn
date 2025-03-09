@@ -31,7 +31,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       style={{ animationDelay: `${delay}s` }}
     >
       {image && (
-        <div className="w-full h-48 overflow-hidden">
+        <div className="w-full h-48 overflow-hidden relative">
+          <div className="absolute inset-0 bg-purple/20 z-10" /> {/* Soft purple overlay */}
           <img 
             src={image} 
             alt={title} 
