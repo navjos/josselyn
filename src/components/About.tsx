@@ -42,7 +42,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/2">
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I'm a product professional and ecosystem builder dedicated to crafting solutions that blend innovation and impact for real-world problems. Currently, I am leading product growth at RentCheck, a Techstars backed early stage startup automating rental property inspections.
+                  I'm a product professional and ecosystem builder dedicated to crafting solutions that blend innovation and impact for real-world problems. Currently, I am a product growth analyst at RentCheck, a Techstars backed early stage startup automating rental property inspections.
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Previously, I was an equities sales trader at Goldman Sachs, where I covered institutional clients trading Latin American stocks and helped scale the Andean equity swap business. I graduated from the University of Chicago magna cum laude with a degree in Economics and Data Science.
