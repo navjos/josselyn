@@ -66,12 +66,14 @@ const Portfolio = () => {
     {
       title: "Retirement Planning Tool",
       description: "Interactive calculator for financial independence planning with personalized recommendations.",
+      image: "/lovable-uploads/835acc7f-cc63-48ef-a46b-68c6555bc199.png",
       link: "https://navjos.github.io/fire-calculator/",
       delay: 0.5
     },
     {
       title: "Debt Repayment Planner",
       description: "Strategic debt repayment application minimizing interest through optimized payment scheduling.",
+      image: "/lovable-uploads/82b3eb1b-f824-44a5-abbf-571b69c6db28.png",
       link: "https://payplanwizard.lovable.app/auth",
       delay: 0.6
     }
@@ -122,6 +124,7 @@ const Portfolio = () => {
                   title={app.title}
                   description={app.description}
                   link={app.link}
+                  image={app.image}
                   delay={app.delay}
                 />
               ))}

@@ -41,7 +41,7 @@ const FeaturedWorks = () => {
           
           <div className="max-w-2xl text-center mb-12">
             <p className="text-muted-foreground">
-              Explore a selection of my recent work and projects that demonstrates my creativity and problem-solving
+              Explore a selection of my recent work and projects that demonstrate my creativity and problem-solving skills.
             </p>
           </div>
           

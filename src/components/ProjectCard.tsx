@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     >
       {image && (
         <div className="w-full h-48 overflow-hidden relative">
-          <div className="absolute inset-0 bg-purple/20 z-10" /> {/* Soft purple overlay */}
+          <div className="absolute inset-0 bg-[#e5deff]/40 z-10" /> {/* Soft lilac overlay */}
           <img 
             src={image} 
             alt={title} 
