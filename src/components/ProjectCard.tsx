@@ -38,6 +38,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             alt={title} 
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
           />
+          
+          {link && (
+            <div className="absolute inset-0 flex items-center justify-center z-20">
+              <a 
+                href={link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-md flex items-center gap-1.5 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+                Visit {icon ? "" : "Project"} <ExternalLink size={16} />
+              </a>
+            </div>
+          )}
         </div>
       )}
       
@@ -53,16 +66,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         
         <p className="text-gray-600 mb-5">{description}</p>
         
-        {link && (
-          <a 
-            href={link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-flex items-center text-purple-600 hover:text-purple-800 gap-1.5 transition-colors"
-          >
-            Visit {icon ? "" : "Project"} <ExternalLink size={14} />
-          </a>
-        )}
+        {/* Removed the link from here as it's now in the image */}
       </div>
     </div>
   );
