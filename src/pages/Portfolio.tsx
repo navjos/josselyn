@@ -76,6 +76,13 @@ const Portfolio = () => {
       image: "/lovable-uploads/82b3eb1b-f824-44a5-abbf-571b69c6db28.png",
       link: "https://payplanwizard.lovable.app/auth",
       delay: 0.6
+    },
+    {
+      title: "Sensei",
+      description: "A core product upskilling app on 6 core competencies for product builders in the age of AI.",
+      image: "/lovable-uploads/sensei-app.png",
+      link: "https://sensei-831849955862.us-west1.run.app/",
+      delay: 0.7
     }
   ];
 
