@@ -38,7 +38,7 @@ const About = () => {
                     <div className="p-2 bg-soft-purple rounded-lg">
                       <Building className="w-5 h-5 text-purple" />
                     </div>
-                    <span className="text-sm">Startup operator, Goldman Sachs</span>
+                    <span className="text-sm">American Express, RentCheck, Goldman Sachs</span>
                   </div>
                   
                   <div className="flex items-center gap-3">
