@@ -30,10 +30,8 @@ const About = () => {
           <div className="bg-white p-8 rounded-xl shadow-sm card-hover max-w-4xl w-full mb-8">
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/2">
-                <p className="text-muted-foreground mb-6 leading-relaxed">I'm a product professional and ecosystem builder dedicated to crafting solutions that blend innovation and impact for real-world problems. Currently, I am a product growth associate at RentCheck, a Techstars backed early stage startup automating rental property inspections.</p>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Previously, I was an equities sales trader at Goldman Sachs, where I covered institutional clients trading Latin American stocks and helped scale the Andean equity swap business. I graduated from the University of Chicago magna cum laude with a degree in Economics and Data Science.
-                </p>
+                <p className="text-muted-foreground mb-6 leading-relaxed">I’m a product professional and ecosystem builder focused on creating solutions that merge innovation with real-world impact. Currently, I serve as an Associate Product Manager at American Express. Before that, I drove product-led growth at RentCheck, a Techstars-backed startup automating rental property inspections.</p>
+                <p className="text-muted-foreground mb-6 leading-relaxed">Earlier in my career, I was an equities sales trader at Goldman Sachs. I hold a bachelor’s degree in Economics with a minor in Data Science from the University of Chicago, where I graduated magna cum laude.</p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="flex items-center gap-3">
