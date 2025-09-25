@@ -80,7 +80,7 @@ const Portfolio = () => {
     {
       title: "Sensei",
       description: "A core product upskilling app on 6 core competencies for product builders in the age of AI.",
-      image: "/lovable-uploads/sensei-interface.png",
+      image: "/lovable-uploads/sensei-screenshot.png",
       link: "https://sensei-831849955862.us-west1.run.app/",
       delay: 0.7
     }
